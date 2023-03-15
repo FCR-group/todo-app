@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  setup_env:
+  build_project:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
@@ -28,5 +28,5 @@ jobs:
       - name: Install Angular
         run: npm install -g @angular/cli
         
-      - name: Building Project
+      - name: Build Project
         run: cd todo-web-app/ && npm i && ng build
