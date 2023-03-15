@@ -20,10 +20,8 @@ jobs:
         with:
             node-version: 16.18.0
             
-      - name: Installing Angular v14.2.6
-        uses: mayurrawte/angular-github-actions@v1.1.0
-        with:
-          version: 14.2.6
+      - name: Angular Github Actions
+        uses: mayurrawte/github-angular-actions@v1.1.0
 
       - uses: actions/checkout@v3
       
