@@ -26,13 +26,10 @@ jobs:
         run: npm install -g npm
         
       - name: Changing Directory
-        run: cd todo-web-app/
+        run: cd todo-web-app/ && npm i && ng build
         
-  build_angular_project:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install dependencies
-        run: npm i
+      ##- name: Install dependencies
+       # run: npm i
        
-      - name: Build Project
-        run: ng build
+      #- name: Build Project
+       # run: ng build
