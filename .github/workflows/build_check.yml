@@ -19,20 +19,14 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
             node-version: 16.18.0
-            
-      - name: Angular Github Actions
-        uses: mayurrawte/github-angular-actions@v1.1.0
 
       - uses: actions/checkout@v3
       
       - name: Install latest npm version
         run: npm install -g npm
         
+      - name: Install Angular
+        run: npm install -g @angular/cli
+        
       - name: Building Project
         run: cd todo-web-app/ && npm i && ng build
-        
-      ##- name: Install dependencies
-       # run: npm i
-       
-      #- name: Build Project
-       # run: ng build
